@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import getRouter from './routes'
 
 ReactDOM.render(
-  <div>22</div>,
+  getRouter(),
   document.getElementById('container')
 );
