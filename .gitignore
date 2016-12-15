@@ -45,3 +45,7 @@ jspm_packages
 *.iml
 out
 gen
+
+public/bundle*
+
+
