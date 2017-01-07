@@ -1,10 +1,10 @@
 import React , { Component } from 'react'
-import './Hello.scss'
+import style from './Hello.scss'
 
 class Hello extends Component {
   render() {
     return (
-      <h1>Hello</h1>
+      <h1 className={style.title}>Hello</h1>
     )
   }
 }

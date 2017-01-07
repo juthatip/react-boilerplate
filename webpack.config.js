@@ -25,7 +25,7 @@ var config = {
         include: APP_DIR,
         loaders: [
           'style',
-          'css',
+          'css?modules',
           'sass',
           'postcss'
         ]
