@@ -1,9 +1,10 @@
 import React , { Component } from 'react'
+import './Hello.scss'
 
 class Hello extends Component {
   render() {
     return (
-      <div>Hello</div>
+      <h1>Hello</h1>
     )
   }
 }

@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var autoprefixer = require('autoprefixer');
 var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'public');
@@ -10,14 +11,31 @@ var config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
-  module : {
-    loaders : [
+  module: {
+    loaders: [
       {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'babel'
+        test: /\.jsx?/,
+        exclude: /node_modules/,
+        include: APP_DIR,
+        loader: 'babel'
+      },
+      {
+        test : /\.scss$/,
+        exclude: /node_modules/,
+        include: APP_DIR,
+        loaders: [
+          'style',
+          'css',
+          'sass',
+          'postcss'
+        ]
       }
     ]
+  },
+  postcss: () => {
+    return [
+      require('autoprefixer')
+    ];
   }
 };
 
