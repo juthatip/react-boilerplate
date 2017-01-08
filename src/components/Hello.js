@@ -4,7 +4,7 @@ import style from './Hello.scss'
 class Hello extends Component {
   render() {
     return (
-      <h1 className={style.title}>Hello</h1>
+      <h1 className={style.title}>Hello Starter !!</h1>
     )
   }
 }
