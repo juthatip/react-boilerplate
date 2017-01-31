@@ -29,8 +29,7 @@ var config = {
         loaders: [
           'style',
           'css?modules',
-          'sass',
-          'postcss'
+          'sass'
         ]
       }
     ]
